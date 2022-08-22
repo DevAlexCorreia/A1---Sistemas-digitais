@@ -13,16 +13,7 @@ public class Animal {
   private int damage;
 
     public Animal(int velocity, int mass, int strenght){
-        this.alive=true;
-        this.x=0;
-        this.y=0;
-        this.strenght=strenght;
-        this.velocity=velocity;
-        this.resistence=resistence;
-        this.life=100;
-        this.stamina=stamina;
-        this.damage=damage;
-    }
+    }   
     
     public int getstrenght(){
         return this.strenght;
@@ -36,7 +27,30 @@ public class Animal {
     public void setVelocity(int velocity){
         this.velocity=velocity;
     }
-    
+    public int getResistence(){
+        return this.resistence;
+    }
+    public void setResistence(int resistence){
+        this.resistence=resistence;
+    }
+    public int getLife(){
+        return this.life;
+    }
+    public void setLife(int life){
+        this.life=life;
+    }
+    public int getStamina(){
+        return this.stamina;
+    }
+    public void setStamina(int stamina){
+        this.stamina=stamina;
+    }
+    public int getDamage(){
+        return this.damage;
+    }
+    public void setDamage(int damage){
+        this.damage=damage;
+    }
     public void attack(Animal Tiger){
        do{
         if(this.stamina>0){            
