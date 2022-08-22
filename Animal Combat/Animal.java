@@ -88,7 +88,7 @@ public class Animal {
     }   
 //_________________________________________INFORMATION FUNCTION___________________________________________________  
     public void info(){
-        System.out.print("-------------------------------------");
+        System.out.print("-------------------------------------\n");
         System.out.printf("Animals Stamina is now: %d\n",this.stamina);
         System.out.printf("Animals Life is: %d\n",this.life);
         System.out.printf("Animals resistence is: %d\n",this.resistence);
