@@ -1,9 +1,9 @@
-abstract class Animal implements SerVivo{
+public class Animal {
     
   private Boolean vivo;
   private int massa;
-  private int x;
-  private int y;
+  private int x;// x-axis motion indicator
+  private int y;//y-axis motion indicator
   private int vel;
   private int forca;
   private int vida;
@@ -35,15 +35,8 @@ abstract class Animal implements SerVivo{
         this.vel=vel;
     }
     
-    public void atacar(Animal veado){
-        if(this.vivo){
-           if(this.forca>veado.forca){
-            this.forca+=10;
-        }
-        else{
-            veado.forca+=10;
-        }
-    }
+    public void atacar(){
+        
     }
     public void mover(){
         if(this.vivo){
