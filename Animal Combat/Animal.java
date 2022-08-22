@@ -3,8 +3,8 @@ public class Animal {
   
   Random random = new Random();
   private Boolean alive;
-  private int x;// x-axis motion indicator
-  private int y;//y-axis motion indicator
+  //private int x;// x-axis motion indicator
+  //private int y;//y-axis motion indicator
   private int strenght;
   private int velocity;
   private int resistence=100; 
@@ -12,7 +12,7 @@ public class Animal {
   private int stamina=100;
   private int damage;
 
-    public Animal(int velocity, int mass, int strenght){
+    public Animal(int velocity, int stamina, int strenght){
     }   
     
     public int getstrenght(){
@@ -89,9 +89,9 @@ public class Animal {
     public void comer(int mass){}
     public void info(){
         System.out.print("-------------------------------------");
-        System.out.printf("The Animals life is now: %d",this.life);
-        System.out.printf("A Velocidade do animal é: %d",this.velocity);
-        System.out.printf("A Força do animal é: %d",this.strenght);
+        System.out.printf("The Animals life is now: %d\n",this.alive);
+        System.out.printf("A Velocidade do animal é: %d\n",this.stamina);
+        System.out.printf("A Força do animal é: %d\n",this.life);
 
     }
     
